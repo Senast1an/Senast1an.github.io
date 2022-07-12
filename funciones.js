@@ -145,8 +145,8 @@ calcularB.addEventListener( 'click', e => {
         logo: {
             src: "logo.png",
             type: 'PNG', //optional, when src= data:uri (nodejs case)
-            width: 53.33, //aspect ratio = width/height
-            height: 53.33,
+            width: 30, //aspect ratio = width/height
+            height: 30,
             margin: {
                 top: 0, //negative or positive num, from the current position
                 left: 0 //negative or positive num, from the current position
