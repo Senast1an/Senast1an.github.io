@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="funciones.js"></script>
+</head>
+<body>
+    <nav id="nav">
+        <span id="titulo">Recetario</span>
+        <input type="text" name="buscar" id="buscar" placeholder="Busque una receta en específico...">
+    </nav>
+    <main>
+        <h1>Bienvenido a su web de recetas</h1>
+        <p id="descripcion">En esta página podra encontrar una recopilación de distintas platillos peruanas. Para todos los gustos y costumbres.
+            La lista de ingredientes y la receta paso a paso de como prepararlos. 
+        </p>
+        <section id="listarecetas">
+            <form id="filtros" action="">
+                <h3>Filtros</h3>
+                <div id="categorias">
+                    <input type="checkbox" name="vegetariano">
+                    <label for="vegetariano">Vegetariano</label>
+
+                    <input type="checkbox" name="picante">
+                    <label for="picante">Picante</label>
+                </div>
+                <input type="button" value="Aplicar">
+            </form>
+            <div class="tarjeta" onclick="location.href=''">
+                <img src="imagenes/lomosaltado.jpg" alt="Lomo saltado" class="foto-receta">
+                <h2 class="titulo-receta">Lomo saltado</h2>
+                <p class="descripcion-receta">El lomo saltado es un plato típico de la gastronomía del Perú consistente en carne de res, arroz cocido y papas fritas. Es uno de los platos más consumidos popularmente.</p>
+                <div class="categorias">
+                    <span class="categoria vegetariano">Vegetariano</span>
+                </div>
+            </div>
+            <div class="tarjeta" onclick="location.href=''">
+                <img src="imagenes/lomosaltado.jpg" alt="Lomo saltado" class="foto-receta">
+                <h2 class="titulo-receta">Lomo saltado</h2>
+                <p class="descripcion-receta">El lomo saltado es un plato típico de la gastronomía del Perú consistente en carne de res, arroz cocido y papas fritas. Es uno de los platos más consumidos popularmente.</p>
+                <div class="categorias">
+                    <span class="categoria picante">Picante</span>
+                </div>
+            </div>
+            <div class="tarjeta" onclick="location.href=''">
+                <img src="imagenes/lomosaltado.jpg" alt="Lomo saltado" class="foto-receta">
+                <h2 class="titulo-receta">Lomo saltado</h2>
+                <p class="descripcion-receta">El lomo saltado es un plato típico de la gastronomía del Perú consistente en carne de res, arroz cocido y papas fritas. Es uno de los platos más consumidos popularmente.</p>
+                <div class="categorias">
+                    <span class="categoria picante">Picante</span>
+                </div>
+            </div>
+            <div class="tarjeta" onclick="location.href=''">
+                <img src="imagenes/lomosaltado.jpg" alt="Lomo saltado" class="foto-receta">
+                <h2 class="titulo-receta">Lomo saltado</h2>
+                <p class="descripcion-receta">El lomo saltado es un plato típico de la gastronomía del Perú consistente en carne de res, arroz cocido y papas fritas. Es uno de los platos más consumidos popularmente.</p>
+            </div>
+            <div class="tarjeta" onclick="location.href=''">
+                <img src="imagenes/lomosaltado.jpg" alt="Lomo saltado" class="foto-receta">
+                <h2 class="titulo-receta">Lomo saltado</h2>
+                <p class="descripcion-receta">El lomo saltado es un plato típico de la gastronomía del Perú consistente en carne de res, arroz cocido y papas fritas. Es uno de los platos más consumidos popularmente.</p>
+            </div>
+            <div class="tarjeta" onclick="location.href=''">
+                <img src="imagenes/lomosaltado.jpg" alt="Lomo saltado" class="foto-receta">
+                <h2 class="titulo-receta">Lomo saltado</h2>
+                <p class="descripcion-receta">El lomo saltado es un plato típico de la gastronomía del Perú consistente en carne de res, arroz cocido y papas fritas. Es uno de los platos más consumidos popularmente.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
