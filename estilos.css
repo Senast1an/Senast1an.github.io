@@ -22,7 +22,7 @@ main {
 }
 
 
-#nav {
+#nav{
     height: 80px;
     background-color: red;
     width: 100vw;
@@ -52,7 +52,22 @@ main {
 #filtros {
     float: left;
     position: fixed;
+    width: 10vw; 
+    background-color: #ddd;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
 }
+
+#categorias {
+    display: flex;
+    flex-direction: column;
+}
+
+.check {
+    margin-bottom: 10px;
+}
+
 
 .tarjeta {
     background-color: #ddd;
@@ -63,30 +78,86 @@ main {
     margin: 40px auto;
     cursor: pointer;
     border-radius: 30px;
-
+    position: relative;
 }
 
 .foto-receta {
     height: 200px;
+    width: 350px;
     float: left;
     margin-right: 30px;
     border-radius: 20px;
 }
 
-.categoria {
+.categorias {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+}
+
+.categoria::after {
     border-radius: 4px;
     padding: 5px;
     font-size: 15px;
 }
 
-.vegetariano {
-    background-color: #0DA10D;
+.vegetariano::after {
+    background-color: #008000;
     color: white;
+    content: "Vegetariano";
 }
 
 
-.picante {
-    background-color: #FC7B01;
-    color:white
-    
+.picante::after {
+    background-color: #FFA500;
+    color:white;
+    content: "Picante";
+}
+
+.marino::after {
+    background-color: #0000FF ;
+    color: white;
+    content: "Marino";
+}
+
+.criollo::after {
+    background-color: #8B0000;
+    color: white;
+    content: "Criollo";
+}
+
+.selvatico::after {
+    background-color: #006400;
+    color: white;
+    content: "Selvatico";
+}
+
+.pastas::after {
+    background-color: #FFFF99;
+    color: black;
+    content: "Pasta";
+}
+
+.oriental::after {
+    background-color: #FF0000;
+    color: white;
+    content: "Oriental";
+}
+
+.postre::after {
+    background-color: #FFC0CB ;
+    color: black;
+    content: "Postre";
+}
+
+.andino::after {
+    background-color: #E2725B;
+    color: black;
+    content: "Andino";
+}
+
+.sopas::after {
+    background-color: #C4D8AF;
+    color: black;
+    content: "Sopa";
 }

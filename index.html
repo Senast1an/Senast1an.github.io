@@ -13,60 +13,139 @@
         <input type="text" name="buscar" id="buscar" placeholder="Busque una receta en específico...">
     </nav>
     <main>
-        <h1>Bienvenido a su web de recetas</h1>
-        <p id="descripcion">En esta página podra encontrar una recopilación de distintas platillos peruanas. Para todos los gustos y costumbres.
-            La lista de ingredientes y la receta paso a paso de como prepararlos. 
+        <h1>Bienvenid@ a su web de recetas</h1>
+        <p id="descripcion">
+            Bienvenidos a nuestra plataforma dedicada a la riqueza culinaria de Perú, 
+            un país conocido en todo el mundo por su impresionante diversidad de sabores y su herencia 
+            gastronómica única. En cada rincón de esta tierra mágica, encontrarás una fusión de influencias 
+            culturales y una abundancia de ingredientes frescos que se combinan para crear platos que 
+            son verdaderas obras maestras del paladar.
         </p>
         <section id="listarecetas">
             <form id="filtros" action="">
                 <h3>Filtros</h3>
                 <div id="categorias">
-                    <input type="checkbox" name="vegetariano">
-                    <label for="vegetariano">Vegetariano</label>
+                    <div class="check">
+                        <input type="checkbox" name="vegetariano">
+                        <label for="vegetariano">Vegetariano</label>
+                    </div>
+                    
+                    <div class="check">
+                        <input type="checkbox" name="picante">
+                        <label for="picante">Picante</label>
+                    </div>
 
-                    <input type="checkbox" name="picante">
-                    <label for="picante">Picante</label>
+                    <div class="check">
+                        <input type="checkbox" name="marino">
+                        <label for="marino">Marino</label>
+                    </div>
+
+                    <div class="check">    
+                        <input type="checkbox" name="criollo">
+                        <label for="criollo">Criollo</label>
+                    </div>
+
+                    <div class="check">    
+                        <input type="checkbox" name="selvatico">
+                        <label for="selvatico">Selvático</label>
+                    </div>
+
+                    <div class="check">    
+                        <input type="checkbox" name="pastas">
+                        <label for="pastas">Pastas</label>
+                    </div>
+
+                    <div class="check">    
+                        <input type="checkbox" name="oriental">
+                        <label for="oriental">Oriental</label>
+                    </div>
+                    
+                    <div class="check">    
+                        <input type="checkbox" name="postre">
+                        <label for="postre">Postre</label>
+                    </div>
+                    
+                    <div class="check">    
+                        <input type="checkbox" name="andino">
+                        <label for="andino">Andino</label>
+                    </div>
                 </div>
                 <input type="button" value="Aplicar">
             </form>
             <div class="tarjeta" onclick="location.href=''">
                 <img src="imagenes/lomosaltado.jpg" alt="Lomo saltado" class="foto-receta">
                 <h2 class="titulo-receta">Lomo saltado</h2>
-                <p class="descripcion-receta">El lomo saltado es un plato típico de la gastronomía del Perú consistente en carne de res, arroz cocido y papas fritas. Es uno de los platos más consumidos popularmente.</p>
+                <p class="descripcion-receta">
+                    El lomo saltado es un plato típico de la gastronomía del Perú consistente en 
+                    carne de res, arroz cocido y papas fritas. Es uno de los platos más consumidos 
+                    popularmente.
+                </p>
                 <div class="categorias">
-                    <span class="categoria vegetariano">Vegetariano</span>
+                    <span class="categoria criollo"></span>
+                    <span class="categoria oriental"></span>
                 </div>
             </div>
             <div class="tarjeta" onclick="location.href=''">
-                <img src="imagenes/lomosaltado.jpg" alt="Lomo saltado" class="foto-receta">
-                <h2 class="titulo-receta">Lomo saltado</h2>
-                <p class="descripcion-receta">El lomo saltado es un plato típico de la gastronomía del Perú consistente en carne de res, arroz cocido y papas fritas. Es uno de los platos más consumidos popularmente.</p>
+                <img src="imagenes/ceviche.jpg" alt="Ceviche" class="foto-receta">
+                <h2 class="titulo-receta">Ceviche</h2>
+                <p class="descripcion-receta">
+                    El ceviche es un plato típico peruano, elaborado con 
+                    trozos pequeños de pescado crudo, cebolla, pimentón y camote, entre otros ingredientes. 
+                    Se macera con limón o naranja agria
+                </p>
                 <div class="categorias">
-                    <span class="categoria picante">Picante</span>
+                    <span class="categoria picante"></span>
+                    <span class="categoria marino"></span>
                 </div>
             </div>
             <div class="tarjeta" onclick="location.href=''">
-                <img src="imagenes/lomosaltado.jpg" alt="Lomo saltado" class="foto-receta">
-                <h2 class="titulo-receta">Lomo saltado</h2>
-                <p class="descripcion-receta">El lomo saltado es un plato típico de la gastronomía del Perú consistente en carne de res, arroz cocido y papas fritas. Es uno de los platos más consumidos popularmente.</p>
+                <img src="imagenes/juane.jpg" alt="Juane" class="foto-receta">
+                <h2 class="titulo-receta">Juane</h2>
+                <p class="descripcion-receta">
+                    El juane típico de la gastronomía de la selva peruana 
+                    y es muy consumido durante la fiesta de San Juan que se celebra el 24 de junio de 
+                    cada año en honor a Juan Bautista.
+                    </p>
                 <div class="categorias">
-                    <span class="categoria picante">Picante</span>
+                    <span class="categoria selvatico"></span>
                 </div>
             </div>
             <div class="tarjeta" onclick="location.href=''">
-                <img src="imagenes/lomosaltado.jpg" alt="Lomo saltado" class="foto-receta">
-                <h2 class="titulo-receta">Lomo saltado</h2>
-                <p class="descripcion-receta">El lomo saltado es un plato típico de la gastronomía del Perú consistente en carne de res, arroz cocido y papas fritas. Es uno de los platos más consumidos popularmente.</p>
+                <img src="imagenes/patasca.jpg" alt="Patasca" class="foto-receta">
+                <h2 class="titulo-receta">Patasca</h2>
+                <p class="descripcion-receta">
+                    La patasca son una variedad de caldo que se prepara con mote y que 
+                    lleva trozos de carne de res, cerdo o cabrito, dependiendo de las variaciones 
+                    regionales.
+                </p>
+                <div class="categorias">
+                    <span class="categoria andino"></span>
+                    <span class="categoria sopas"></span>
+                </div>
             </div>
             <div class="tarjeta" onclick="location.href=''">
-                <img src="imagenes/lomosaltado.jpg" alt="Lomo saltado" class="foto-receta">
-                <h2 class="titulo-receta">Lomo saltado</h2>
-                <p class="descripcion-receta">El lomo saltado es un plato típico de la gastronomía del Perú consistente en carne de res, arroz cocido y papas fritas. Es uno de los platos más consumidos popularmente.</p>
+                <img src="imagenes/picarones.jpg" alt="Picarones" class="foto-receta">
+                <h2 class="titulo-receta">Picarones</h2>
+                <p class="descripcion-receta">
+                    Los picarones son dulces fritos en forma de anillo hechos con masa de harina de 
+                    trigo mezclada con zapallo, y, en ocasiones, camote, bañados en miel de chancaca 
+                    aromatizada.    
+                </p>
+                <div class="categorias">
+                    <span class="categoria postre"></span>
+                </div>
             </div>
             <div class="tarjeta" onclick="location.href=''">
-                <img src="imagenes/lomosaltado.jpg" alt="Lomo saltado" class="foto-receta">
-                <h2 class="titulo-receta">Lomo saltado</h2>
-                <p class="descripcion-receta">El lomo saltado es un plato típico de la gastronomía del Perú consistente en carne de res, arroz cocido y papas fritas. Es uno de los platos más consumidos popularmente.</p>
+                <img src="imagenes/chaufa.jpg" alt="Arroz chaufa" class="foto-receta">
+                <h2 class="titulo-receta">Arroz chaufa</h2>
+                <p class="descripcion-receta">
+                    El arroz chaufa, o chaufa, es un tipo de arroz frito consumido en Perú. 
+                    Forma parte del estilo gastronómico tusán, siendo parte de la cual se denomina 
+                    como cocina chifa.
+                </p>
+                <div class="categorias">
+                    <span class="categoria oriental"></span>
+                </div>
             </div>
         </section>
     </main>
