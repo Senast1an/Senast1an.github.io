@@ -27,6 +27,12 @@ main {
         position:static !important;
         width: 200px !important;
     }
+
+    .tarjeta {
+        display: flex;
+        flex-direction: column;
+        height: unset !important;
+    }
 }
 
 #nav{
@@ -87,6 +93,7 @@ main {
     display: grid;
     grid-template-rows: var(--rows, 0fr);
     transition: .3s grid-template-rows;
+    
 }
 
 #dropdownsub {
@@ -121,6 +128,9 @@ main {
     position: relative;
 }
 
+p {
+    text-align: justify;
+}
 .foto-receta {
     height: 200px;
     width: 350px;
