@@ -39,6 +39,7 @@ h1 {
     font-size: 50px;
     font-family: 'Damion', cursive;
     margin-left: 100px;
+    cursor: pointer;
 }
 
 .foto-principal {
