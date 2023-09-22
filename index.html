@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetas</title>
     <link rel="stylesheet" href="estilos.css">
-    <script src="funciones.js"></script>
 </head>
 <body>
     <nav id="nav">
-        <span id="titulo">Recetario</span>
+        <span id="titulo-pagina">Recetario</span>
         <input type="text" name="buscar" id="buscar" placeholder="Busque una receta en específico...">
     </nav>
     <main>
@@ -23,56 +22,64 @@
         </p>
         <section id="listarecetas">
             <form id="filtros" action="">
-                <h3>Filtros</h3>
-                <div id="categorias">
-                    <div class="check">
-                        <input type="checkbox" name="vegetariano">
-                        <label for="vegetariano">Vegetariano</label>
-                    </div>
-                    
-                    <div class="check">
-                        <input type="checkbox" name="picante">
-                        <label for="picante">Picante</label>
-                    </div>
+                <div id="filtrosheader">
+                    <h3 id="filtrostitulo">Filtros</h3>
+                    <input type="checkbox" id="mostrarFiltros">
+                    <label for="mostrarFiltros" class="nav_menu">
+                        <img src="assets/down.svg" class="icono_filtros">
+                    </label>
+                </div>
+                <div id="dropdown">
+                    <div id="dropdownsub">
+                        <div class="check">
+                            <input id="checkvegetariano" class="categoriacheck" type="checkbox" name="vegetariano">
+                            <label for="vegetariano">Vegetariano</label>
+                        </div>
+                        
+                        <div class="check">
+                            <input id="checkpicante" class="categoriacheck" type="checkbox" name="picante">
+                            <label for="picante">Picante</label>
+                        </div>
 
-                    <div class="check">
-                        <input type="checkbox" name="marino">
-                        <label for="marino">Marino</label>
-                    </div>
+                        <div class="check">
+                            <input id="checkmarino" class="categoriacheck" type="checkbox" name="marino">
+                            <label for="marino">Marino</label>
+                        </div>
 
-                    <div class="check">    
-                        <input type="checkbox" name="criollo">
-                        <label for="criollo">Criollo</label>
-                    </div>
+                        <div class="check">    
+                            <input id="checkcriollo" class="categoriacheck" type="checkbox" name="criollo">
+                            <label for="criollo">Criollo</label>
+                        </div>
 
-                    <div class="check">    
-                        <input type="checkbox" name="selvatico">
-                        <label for="selvatico">Selvático</label>
-                    </div>
+                        <div class="check">    
+                            <input id="checkselvatico" class="categoriacheck" type="checkbox" name="selvatico">
+                            <label for="selvatico">Selvático</label>
+                        </div>
 
-                    <div class="check">    
-                        <input type="checkbox" name="pastas">
-                        <label for="pastas">Pastas</label>
-                    </div>
+                        <div class="check">    
+                            <input id="checkpastas" class="categoriacheck" type="checkbox" name="pastas">
+                            <label for="pastas">Pastas</label>
+                        </div>
 
-                    <div class="check">    
-                        <input type="checkbox" name="oriental">
-                        <label for="oriental">Oriental</label>
-                    </div>
-                    
-                    <div class="check">    
-                        <input type="checkbox" name="postre">
-                        <label for="postre">Postre</label>
-                    </div>
-                    
-                    <div class="check">    
-                        <input type="checkbox" name="andino">
-                        <label for="andino">Andino</label>
+                        <div class="check">    
+                            <input id="checkoriental" class="categoriacheck" type="checkbox" name="oriental">
+                            <label for="oriental">Oriental</label>
+                        </div>
+                        
+                        <div class="check">    
+                            <input id="checkpostre" class="categoriacheck" type="checkbox" name="postre">
+                            <label for="postre">Postre</label>
+                        </div>
+                        
+                        <div class="check">    
+                            <input id="checkandino" class="categoriacheck" type="checkbox" name="andino">
+                            <label for="andino">Andino</label>
+                        </div>
+                        <input type="button" value="Aplicar" onclick="aplicar()">
                     </div>
                 </div>
-                <input type="button" value="Aplicar">
             </form>
-            <div class="tarjeta" onclick="location.href=''">
+            <div class="tarjeta" onclick="location.href='recetas/lomosaltado/Plantilla.html'">
                 <img src="imagenes/lomosaltado.jpg" alt="Lomo saltado" class="foto-receta">
                 <h2 class="titulo-receta">Lomo saltado</h2>
                 <p class="descripcion-receta">
@@ -149,5 +156,7 @@
             </div>
         </section>
     </main>
+    
+    <script src="funciones.js"></script>
 </body>
 </html>
