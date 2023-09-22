@@ -22,15 +22,19 @@ main {
 }
 
 
+@media (max-width: 1550px) {
+    #filtros {
+        position:static !important;
+        width: 200px !important;
+    }
+}
+
 #nav{
     height: 80px;
     background-color: red;
     width: 100vw;
     display: flex;
     justify-content: space-between;
-
-    --img1: scale(1);
-    --img2: scale(0);
 }
 
 #buscar {
@@ -62,7 +66,6 @@ main {
 }
 
 #filtros {
-    float: left;
     position: fixed;
     width: 10vw; 
     background-color: #ddd;
