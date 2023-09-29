@@ -4,6 +4,7 @@
     outline:none;
 }
 
+
 body {
     padding: 0;
     margin: 0;
@@ -18,20 +19,41 @@ h1 {
 
 main {
     margin: 0 auto;
-    width: 70vw;;
+    width: 70vw;
 }
 
 
 @media (max-width: 1550px) {
     #filtros {
         position:static !important;
-        width: 200px !important;
     }
 
+
+
+}
+
+@media (max-width: 1000px) {
+    
     .tarjeta {
         display: flex;
         flex-direction: column;
-        height: unset !important;
+        height: auto !important;
+        width: 60vw !important;
+        min-width: unset !important;
+    }
+
+    #buscar {
+        width: 200px !important;
+    }
+
+    .categorias {
+        top: 245px;
+        right: 30px !important;
+    }
+
+    .foto-receta {
+        width: 100% !important;
+        
     }
 }
 
@@ -41,6 +63,7 @@ main {
     width: 100vw;
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 #buscar {
@@ -65,7 +88,6 @@ main {
 #mostrarFiltros {
     position: absolute;
     top: 10px;
-    width: 100%;
     height: 35px;
     display: block;
     opacity: 0;
@@ -137,6 +159,7 @@ p {
     float: left;
     margin-right: 30px;
     border-radius: 20px;
+    object-fit: cover;
 }
 
 .categorias {
