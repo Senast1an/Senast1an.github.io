@@ -55,6 +55,30 @@ main {
         width: 100% !important;
         
     }
+
+    main {
+        margin:0 auto;
+        width: 80vw;;
+    }
+    
+    #filtros {
+        width: 150px !important;
+    }
+}
+
+@media (max-width: 700px) {
+    .categorias {
+        top: 275px;
+        left: 20px;
+    }
+
+    #buscar {
+        display: none;
+    }
+    
+    #titulo-pagina {
+        margin: auto;
+    }
 }
 
 #nav{
