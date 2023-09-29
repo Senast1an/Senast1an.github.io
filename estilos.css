@@ -23,6 +23,7 @@ main {
 }
 
 
+
 @media (max-width: 1550px) {
     #filtros {
         position:static !important;
@@ -64,13 +65,15 @@ main {
     #filtros {
         width: 150px !important;
     }
+
+    .categorias {
+        top: 290px;
+        left: 40px;
+    }
+
 }
 
 @media (max-width: 700px) {
-    .categorias {
-        top: 275px;
-        left: 20px;
-    }
 
     #buscar {
         display: none;
@@ -119,7 +122,7 @@ main {
 
 #filtros {
     position: fixed;
-    width: 10vw; 
+    width: 150px; 
     background-color: #ddd;
     padding-left: 20px;
     border-radius: 10px;
@@ -164,7 +167,7 @@ main {
 
 .tarjeta {
     background-color: #ddd;
-    padding: 20px;
+    padding: 30px;
     height: 205px;
     width: 40vw;
     min-width: 700px;
@@ -177,6 +180,13 @@ main {
 p {
     text-align: justify;
 }
+
+.titulo-receta {
+    text-align: center;
+    font-size: 35px;
+    margin: 10px auto;
+}
+
 .foto-receta {
     height: 200px;
     width: 350px;
@@ -188,7 +198,7 @@ p {
 
 .categorias {
     position: absolute;
-    bottom: 30px;
+    bottom: 25px;
     right: 50px;
 }
 
