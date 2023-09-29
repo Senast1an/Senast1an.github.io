@@ -60,3 +60,23 @@ iframe {
     width: 70vw;
     height: 700px;
 }
+
+.subtitulo {
+    background-color: #f22;
+}
+
+@media (min-width: 900px) {
+    #informacion {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #preparacion {
+        margin-left: 30px;
+    }
+
+    #ingredientes {
+        flex-grow: 40%;
+    }
+
+}
