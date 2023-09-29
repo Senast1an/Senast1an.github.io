@@ -12,6 +12,10 @@ main {
     width: 70vw;;
 }
 
+#descripcion {
+    font-size: 25px;
+}
+
 h1 {
     text-align: center;
     font-size: 80px;
@@ -63,20 +67,33 @@ iframe {
 
 .subtitulo {
     background-color: #f22;
+    color: white;
+    padding: 10px 2px;
+}
+
+li {
+    margin-bottom: 15px;
+    font-size: 20px;  
 }
 
 @media (min-width: 900px) {
     #informacion {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        column-gap: 20px;
+        grid-template-columns: 4fr 6fr;
     }
 
     #preparacion {
-        margin-left: 30px;
+        grid-column: 2;
     }
 
     #ingredientes {
-        flex-grow: 40%;
+        grid-column: 1;
+    }
+
+    .subtitulo{
+        padding: 10px 40px;
+        text-align: center;
     }
 
 }
