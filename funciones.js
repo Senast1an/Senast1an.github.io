@@ -1,5 +1,5 @@
-let lista = [];
-let tarjetas = [];
+var lista = [];
+var tarjetas = [];
 
 
 function aplicar() {
@@ -15,9 +15,34 @@ function aplicar() {
     revisar("checkpostre");
     revisar("checkandino");
 
-    console.log(lista);
-
     tarjetas = document.getElementsByClassName("tarjeta");
+
+    for(let i = 0; i < tarjetas.length; i++){
+        tarjetas[i].style.display = "block"
+    }
+    console.log(lista)
+    if(lista.length > 0){
+        for(let i = 0; i < tarjetas.length; i++) {
+            let categorias = tarjetas[i].getElementsByClassName("categoria");
+            let contiene = false
+    
+    
+            for(let j = 0; j < categorias.length; j++) {
+                console.log(categorias[j])
+                let categoria = categorias[j].classList[1];
+                console.log(categoria)
+                if (lista.includes(categoria)){
+                    contiene = true;
+                }
+            }
+    
+    
+            if (!contiene) {
+                tarjetas[i].style.display = "none"
+            }
+        }
+    }
+
 
 }
 
@@ -27,10 +52,5 @@ function revisar(a) {
     }
 }
 
-function validar() {
-    for (tarjeta in tarjetas) {
-        let categorias = [];
-        categorias = tarjeta.getElementsByClassName("categorias")
-    }
-}
+
 
