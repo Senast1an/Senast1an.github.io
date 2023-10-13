@@ -2,7 +2,7 @@ var lista = [];
 var tarjetas = [];
 
 
-function aplicar() {
+function aplicarCategorias() {
     lista = [];
 
     revisar("checkvegetariano");
@@ -34,6 +34,46 @@ function aplicar() {
                 if (lista.includes(categoria)){
                     contiene = true;
                 }
+            }
+    
+    
+            if (!contiene) {
+                tarjetas[i].style.display = "none"
+            }
+        }
+    }
+
+
+}
+
+function aplicarIngredientes() {
+    lista = [];
+
+    revisar("checklimon");
+    revisar("checkpapa");
+    revisar("checkarroz");
+    revisar("checkcebolla");
+    revisar("checkpescado");
+
+    tarjetas = document.getElementsByClassName("tarjeta");
+
+    for(let i = 0; i < tarjetas.length; i++){
+        tarjetas[i].style.display = "block"
+    }
+    
+    console.log(lista);
+
+    if(lista.length > 0){
+        for(let i = 0; i < tarjetas.length; i++) {
+            let ingredientes = tarjetas[i].getElementsByClassName("ingrediente");
+            let contiene = false
+            console.log(ingredientes);
+    
+            for(let j = 0; j < ingredientes.length; j++) {
+                let ingrediente = ingredientes[j].classList[1];
+                if (lista.includes(ingrediente)){
+                    contiene = true;
+                } 
             }
     
     

@@ -17,6 +17,10 @@ h1 {
     text-align: center;
 }
 
+h4 {
+    margin: 10px auto;
+}
+
 main {
     margin: 0 auto;
     width: 70vw;
@@ -121,11 +125,15 @@ main {
 }
 
 #filtros {
-    position: fixed;
+    position: absolute;
     width: 150px; 
     background-color: #ddd;
     padding-left: 20px;
     border-radius: 10px;
+}
+
+#divisionfiltros {
+    width: 90%;
 }
 
 #filtros:has(#mostrarFiltros:checked) {
@@ -136,6 +144,8 @@ main {
 
 #filtrostitulo {
     display: inline-block;
+    padding: 10px auto;
+    height: 20px;
 }
 
 #dropdown {
