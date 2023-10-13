@@ -29,8 +29,7 @@ h1 {
     background-color: red;
     width: 100vw;
     display: flex;
-    justify-content: space-between;
-
+    align-items: center;
     --img1: scale(1);
     --img2: scale(0);
 }
@@ -42,8 +41,7 @@ h1 {
     align-items: center;
     font-size: 50px;
     font-family: 'Damion', cursive;
-    margin-left: 100px;
-    cursor: pointer;
+    margin-left: 40px;
 }
 
 .foto-principal {
@@ -75,6 +73,15 @@ iframe {
 li {
     margin-bottom: 15px;
     font-size: 20px;  
+}
+
+#volver {
+    transform: rotate(-90deg);
+    margin-right: 0;
+    margin-left: 10px;
+    height: 80%;
+    
+    cursor: pointer;
 }
 
 @media (min-width: 900px) {
