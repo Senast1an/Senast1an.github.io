@@ -12,96 +12,96 @@
         <input type="text" name="buscar" id="buscar" placeholder="Busque una receta en específico...">
     </nav>
     <main>
-        <section id="listarecetas">
-            <form id="filtros" action="">
-                <div id="filtrosheader">
-                    <h3 id="filtrostitulo">Filtros</h3>
-                    <input type="checkbox" id="mostrarFiltros">
-                    <label for="mostrarFiltros" class="nav_menu">
-                        <img src="assets/down.svg" class="icono_filtros">
-                    </label>
-                </div>
-                <div id="dropdown">
-                    <div id="dropdownsub">
-                        <h4>Por categoría</h4>
-                        <div class="check">
-                            <input id="checkvegetariano" class="categoriacheck" type="checkbox" name="vegetariano">
-                            <label for="vegetariano">Vegetariano</label>
-                        </div>
-                        
-                        <div class="check">
-                            <input id="checkpicante" class="categoriacheck" type="checkbox" name="picante">
-                            <label for="picante">Picante</label>
-                        </div>
-
-                        <div class="check">
-                            <input id="checkmarino" class="categoriacheck" type="checkbox" name="marino">
-                            <label for="marino">Marino</label>
-                        </div>
-
-                        <div class="check">    
-                            <input id="checkcriollo" class="categoriacheck" type="checkbox" name="criollo">
-                            <label for="criollo">Criollo</label>
-                        </div>
-
-                        <div class="check">    
-                            <input id="checkselvatico" class="categoriacheck" type="checkbox" name="selvatico">
-                            <label for="selvatico">Selvático</label>
-                        </div>
-
-                        <div class="check">    
-                            <input id="checkpastas" class="categoriacheck" type="checkbox" name="pastas">
-                            <label for="pastas">Pastas</label>
-                        </div>
-
-                        <div class="check">    
-                            <input id="checkoriental" class="categoriacheck" type="checkbox" name="oriental">
-                            <label for="oriental">Oriental</label>
-                        </div>
-                        
-                        <div class="check">    
-                            <input id="checkpostre" class="categoriacheck" type="checkbox" name="postre">
-                            <label for="postre">Postre</label>
-                        </div>
-                        
-                        <div class="check">    
-                            <input id="checkandino" class="categoriacheck" type="checkbox" name="andino">
-                            <label for="andino">Andino</label>
-                        </div>
-                        <input type="button" value="Filtrar por categoría" onclick="aplicarCategorias()">
-
-                        <hr id="divisionfiltros">
-                        
-                        <h4>Por ingredientes</h4>
-                        <div class="check">    
-                            <input id="checklimon" class="ingredientecheck" type="checkbox" name="limon">
-                            <label for="limon">Limón</label>
-                        </div>
-                        <div class="check">    
-                            <input id="checkcebolla" class="ingredientecheck" type="checkbox" name="cebolla">
-                            <label for="cebolla">Cebolla</label>
-                        </div>
-                        <div class="check">    
-                            <input id="checkpapa" class="ingredientecheck" type="checkbox" name="papa">
-                            <label for="papa">Papa</label>
-                        </div>
-                        <div class="check">    
-                            <input id="checkarroz" class="ingredientecheck" type="checkbox" name="arroz">
-                            <label for="arroz">Arroz</label>
-                        </div>
-                        <div class="check">    
-                            <input id="checkpescado" class="ingredientecheck" type="checkbox" name="pescado">
-                            <label for="pescado">Pescado</label>
-                        </div>
-
-                        <input type="button" value="Filtrar por ingredientes" onclick="aplicarIngredientes()">
+        <form id="filtros" action="">
+            <div id="filtrosheader">
+                <h3 id="filtrostitulo">Filtros</h3>
+                <input type="checkbox" id="mostrarFiltros">
+                <label for="mostrarFiltros" class="nav_menu">
+                    <img src="assets/down.svg" class="icono_filtros">
+                </label>
+            </div>
+            <div id="dropdown">
+                <div id="dropdownsub">
+                    <h4>Por categoría</h4>
+                    <div class="check">
+                        <input id="checkvegetariano" class="categoriacheck" type="checkbox" name="vegetariano">
+                        <label for="vegetariano">Vegetariano</label>
                     </div>
+                    
+                    <div class="check">
+                        <input id="checkpicante" class="categoriacheck" type="checkbox" name="picante">
+                        <label for="picante">Picante</label>
+                    </div>
+
+                    <div class="check">
+                        <input id="checkmarino" class="categoriacheck" type="checkbox" name="marino">
+                        <label for="marino">Marino</label>
+                    </div>
+
+                    <div class="check">    
+                        <input id="checkcriollo" class="categoriacheck" type="checkbox" name="criollo">
+                        <label for="criollo">Criollo</label>
+                    </div>
+
+                    <div class="check">    
+                        <input id="checkselvatico" class="categoriacheck" type="checkbox" name="selvatico">
+                        <label for="selvatico">Selvático</label>
+                    </div>
+
+                    <div class="check">    
+                        <input id="checkpastas" class="categoriacheck" type="checkbox" name="pastas">
+                        <label for="pastas">Pastas</label>
+                    </div>
+
+                    <div class="check">    
+                        <input id="checkoriental" class="categoriacheck" type="checkbox" name="oriental">
+                        <label for="oriental">Oriental</label>
+                    </div>
+                    
+                    <div class="check">    
+                        <input id="checkpostre" class="categoriacheck" type="checkbox" name="postre">
+                        <label for="postre">Postre</label>
+                    </div>
+                    
+                    <div class="check">    
+                        <input id="checkandino" class="categoriacheck" type="checkbox" name="andino">
+                        <label for="andino">Andino</label>
+                    </div>
+                    <input type="button" value="Filtrar por categoría" onclick="aplicarCategorias()">
+
+                    <hr id="divisionfiltros">
+                    
+                    <h4>Por ingredientes</h4>
+                    <div class="check">    
+                        <input id="checklimon" class="ingredientecheck" type="checkbox" name="limon">
+                        <label for="limon">Limón</label>
+                    </div>
+                    <div class="check">    
+                        <input id="checkcebolla" class="ingredientecheck" type="checkbox" name="cebolla">
+                        <label for="cebolla">Cebolla</label>
+                    </div>
+                    <div class="check">    
+                        <input id="checkpapa" class="ingredientecheck" type="checkbox" name="papa">
+                        <label for="papa">Papa</label>
+                    </div>
+                    <div class="check">    
+                        <input id="checkarroz" class="ingredientecheck" type="checkbox" name="arroz">
+                        <label for="arroz">Arroz</label>
+                    </div>
+                    <div class="check">    
+                        <input id="checkpescado" class="ingredientecheck" type="checkbox" name="pescado">
+                        <label for="pescado">Pescado</label>
+                    </div>
+
+                    <input type="button" value="Filtrar por ingredientes" onclick="aplicarIngredientes()">
                 </div>
-            </form>
+            </div>
+        </form>
+        <section id="listarecetas">
+            
             <div class="tarjeta" onclick="location.href='recetas/lomosaltado/Plantilla.html'">
                 <img src="imagenes/lomosaltado.jpg" alt="Lomo saltado" class="foto-receta">
                 <h2 class="titulo-receta">Lomo saltado</h2>
-                <hr>
                 <div class="ingredientes">
                     <span class="ingrediente cebolla"></span>
                     <span class="ingrediente arroz"></span>
@@ -115,7 +115,6 @@
             <div class="tarjeta" onclick="location.href=''">
                 <img src="imagenes/ceviche.jpg" alt="Ceviche" class="foto-receta">
                 <h2 class="titulo-receta">Ceviche</h2>
-                <hr>
                 <div class="ingredientes">
                     <span class="ingrediente limon"></span>
                     <span class="ingrediente pescado"></span>
@@ -129,7 +128,6 @@
             <div class="tarjeta" onclick="location.href=''">
                 <img src="imagenes/juane.jpg" alt="Juane" class="foto-receta">
                 <h2 class="titulo-receta">Juane</h2>
-                <hr>
                 <div class="ingredientes">
                     <span class="ingrediente arroz"></span>
                 </div>
@@ -140,7 +138,6 @@
             <div class="tarjeta" onclick="location.href=''">
                 <img src="imagenes/patasca.jpg" alt="Patasca" class="foto-receta">
                 <h2 class="titulo-receta">Patasca</h2>
-                <hr>
                 <div class="ingredinetes">
                     <span class="ingrediente limon"></span>
                 </div>
@@ -152,7 +149,6 @@
             <div class="tarjeta" onclick="location.href=''">
                 <img src="imagenes/picarones.jpg" alt="Picarones" class="foto-receta">
                 <h2 class="titulo-receta">Picarones</h2>
-                <hr>
                 <div class="categorias">
                     <span class="categoria postre"></span>
                 </div>
@@ -160,7 +156,6 @@
             <div class="tarjeta" onclick="location.href=''">
                 <img src="imagenes/chaufa.jpg" alt="Arroz chaufa" class="foto-receta">
                 <h2 class="titulo-receta">Arroz chaufa</h2>
-                <hr>
                 <div class="ingredientes">
                     <span class="ingrediente arroz"></span>
                 </div>

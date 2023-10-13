@@ -23,7 +23,7 @@ h4 {
 
 main {
     margin: 0 auto;
-    width: 70vw;
+    width: 90vw;
 }
 
 
@@ -130,6 +130,7 @@ main {
     background-color: #ddd;
     padding-left: 20px;
     border-radius: 10px;
+    z-index: 100;
 }
 
 #divisionfiltros {
@@ -174,31 +175,31 @@ main {
     margin-bottom: 10px;
 }
 
+#listarecetas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    padding: 0 200px;
+}
 
 .tarjeta {
     background-color: #ddd;
     padding: 30px;
-    height: 205px;
-    width: 40vw;
-    min-width: 700px;
-    margin: 40px auto;
+
     cursor: pointer;
     border-radius: 30px;
     position: relative;
 }
 
-p {
-    text-align: justify;
-}
 
 .titulo-receta {
     font-size: 35px;
-    margin: 10px auto;
+    margin-top: 30px;
 }
 
 .foto-receta {
     height: 200px;
-    width: 350px;
+    width: 100%;
     float: left;
     margin-right: 30px;
     border-radius: 20px;
