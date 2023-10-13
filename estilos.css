@@ -185,7 +185,7 @@ main {
 .tarjeta {
     background-color: #ddd;
     padding: 30px;
-
+    height: 275px;
     cursor: pointer;
     border-radius: 30px;
     position: relative;
@@ -194,13 +194,12 @@ main {
 
 .titulo-receta {
     font-size: 35px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .foto-receta {
     height: 200px;
     width: 100%;
-    float: left;
     margin-right: 30px;
     border-radius: 20px;
     object-fit: cover;
@@ -208,7 +207,7 @@ main {
 
 .categorias {
     position: absolute;
-    bottom: 25px;
+    bottom: 50px;
     right: 50px;
 }
 
