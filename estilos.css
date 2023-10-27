@@ -29,55 +29,26 @@ main {
 
 
 @media (max-width: 1550px) {
-    #filtros {
-        position:static !important;
-    }
+   .tarjeta{
+    height: 300px !important;
+   }
 
-
-
+   .categorias {
+    left: 30px;
+    bottom: 30px !important;
+   }
 }
 
-@media (max-width: 1000px) {
-    
-    .tarjeta {
-        display: flex;
-        flex-direction: column;
-        height: auto !important;
-        width: 60vw !important;
-        min-width: unset !important;
+@media (max-width: 1300px) {
+    #listarecetas {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        padding: 0 !important;
+        margin-left: 200px;
     }
-
-    #buscar {
-        width: 200px !important;
-    }
-
-    .categorias {
-        top: 245px;
-        right: 30px !important;
-    }
-
-    .foto-receta {
-        width: 100% !important;
-        
-    }
-
-    main {
-        margin:0 auto;
-        width: 80vw;;
-    }
-    
-    #filtros {
-        width: 150px !important;
-    }
-
-    .categorias {
-        top: 290px;
-        left: 40px;
-    }
-
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
 
     #buscar {
         display: none;
@@ -85,6 +56,17 @@ main {
     
     #titulo-pagina {
         margin: auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+    #filtros {
+        display: none !important;
+    }
+    #listarecetas {
+        padding: 0 !important;
+        margin-left: 0 !important;
     }
 }
 
