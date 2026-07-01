@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memoria Numérica</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="panel">
+      <h1>Memoria Numérica</h1>
+      <p class="lead">Memoriza la posición de los números. Cuando se oculten, presiona los cuadros en orden ascendente.</p>
+
+      <div class="stats">
+        <div><span>Nivel</span><strong id="level">1</strong></div>
+        <div><span>Puntaje</span><strong id="score">0</strong></div>
+        <div><span>Mejor</span><strong id="best">0</strong></div>
+        <div><span>Tiempo visible</span><strong id="showTime">2.0s</strong></div>
+      </div>
+
+      <div class="controls">
+        <button id="startBtn">Iniciar juego</button>
+        <button id="resetBtn" class="secondary">Reiniciar</button>
+      </div>
+
+      <p id="message" class="message">Presiona “Iniciar juego” para comenzar.</p>
+    </section>
+
+    <section class="game-card">
+      <div id="board" class="board" aria-label="Tablero del juego"></div>
+    </section>
+
+    <section class="instructions">
+      <h2>Reglas</h2>
+      <ol>
+        <li>Observa los números durante unos segundos.</li>
+        <li>Al ocultarse, recuerda dónde estaba cada número.</li>
+        <li>Haz clic en los cuadros en orden: 1, 2, 3, 4...</li>
+        <li>Cada nivel agrega más números y reduce ligeramente el tiempo visible.</li>
+      </ol>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
